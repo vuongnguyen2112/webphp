@@ -1,0 +1,1 @@
+javascript: var js = document.documentElement.innerHTML; var start = js.search(',"video","games_app","fallback"],url:"'); var end = js.search('/",source:null,media:'); var url = js.substring(start + 38, end); window.open(url);

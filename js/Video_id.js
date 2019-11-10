@@ -1,0 +1,1 @@
+javascript: var js = document.documentElement.innerHTML; var start = js.search('"Video",id:"'); var end = js.search('",animated_image_attribution:'); var url = js.substring(start + 12, end); prompt("Video_id", url);
