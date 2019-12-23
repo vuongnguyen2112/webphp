@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sweet Alert</title>
+	<script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<form>
+		<input type="text" name="username" required="" placeholder="Username...">
+		<br>
+		<br>
+		<input type="password" name="password" required="" placeholder="Password...">
+		<br>
+			<button style="text-align: center;" onclick="validation()">Submit</button>
+	</form>
+
+	<script type="text/javascript">
+		function validation() {
+			var username = 'vuongsaigon';
+			var password = '1234';
+
+			var userName = document.getElementsByName('username').value;
+			var passWord = document.getElementsByName('password').value;
+
+			if ((userName == username) && (passWord == password)) 
+			{
+				swal('Welcome to our website!',"Login successfully","success", {
+					button: "Nice!",
+				});
+			}
+			else {
+				swal('Oops...',"Login fail","error", {
+					button: "Try again",	
+				});
+			}
+		}
+	</script>
+</body>
+</html>
